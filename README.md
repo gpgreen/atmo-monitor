@@ -1,8 +1,8 @@
 # atmo-monitor
 
 KiCad design for a atmospheric measurement board. The MCU is a stm32f103
-Series. There are 2 main sensors. One is the PMS 2007, which measures
-particulates, ie PM2.5. The other sensor is a BMS 680, which measures
+Series. There are 2 main sensors. One is the PMS2007, which measures
+particulates, ie PM2.5. The other sensor is a BME680, which measures
 temperature, pressure, and organic compounds. The measurements are output
 on an E-Ink tri-color display.
 
@@ -18,7 +18,7 @@ and a perfboard pcb. The main goals used for this design:
     hand soldered the smaller parts, but it is very tedious.
 
 I was able to finish the design with the goals and the only part I needed to purchase was the adafruit power breakout. It
-is a 2-layer PCB that I'll have manufactured at [Oshpark](https://oshpark.com).
+is a 2-layer PCB that I have shared at [Oshpark](https://oshpark.com/shared_projects/8b0I1GvP).
 
 ## Changes
 
@@ -31,7 +31,7 @@ is a 2-layer PCB that I'll have manufactured at [Oshpark](https://oshpark.com).
 
 ## Connections to JTAG
 
-I have put test points on the board, so that push-pin test probes can be used to program
+I have put test points on the board, so that pogo pins can be used to program
 the MCU.
 
 From a 20pin JTAG connector, run wires to the following pins to connect a debugger:
