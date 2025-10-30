@@ -8,8 +8,9 @@
 	)
 	(paper "USLetter")
 	(title_block
-		(title "py32_dev")
-		(rev "B")
+		(title "atmo-monitor")
+		(date "2025-10-30")
+		(rev "A")
 		(company "bit-builder.com")
 	)
 	(layers

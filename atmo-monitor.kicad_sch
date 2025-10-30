@@ -6,6 +6,7 @@
 	(paper "A")
 	(title_block
 		(title "atmo-monitor")
+		(date "2025-10-30")
 		(rev "A")
 		(company "bit-builder.com")
 	)
