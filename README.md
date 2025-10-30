@@ -1,10 +1,10 @@
 # atmo-monitor
 
-KiCad design for a atmospheric measurement board. The MCU is a stm32f103
-Series. There are 2 main sensors. One is the PMS2007, which measures
-particulates, ie PM2.5. The other sensor is a BME680, which measures
-temperature, pressure, and organic compounds. The measurements are output
-on an E-Ink tri-color display.
+KiCad design for a atmospheric measurement board. The MCU is a
+stm32f103cbt6. There are 2 main sensors. One is the PMS2007, which
+measures particulates, ie PM2.5. The other sensor is a BME680, which
+measures temperature, pressure, and organic compounds. The
+measurements are output on an E-Ink tri-color display.
 
 This design is a continuation of a project that I did using a nucleo dev board
 and a perfboard pcb. The main goals used for this design:
@@ -18,7 +18,7 @@ and a perfboard pcb. The main goals used for this design:
     hand soldered the smaller parts, but it is very tedious.
 
 I was able to finish the design with the goals and the only part I needed to purchase was the adafruit power breakout. It
-is a 2-layer PCB that I have shared at [Oshpark](https://oshpark.com/shared_projects/8b0I1GvP).
+is a 2-layer PCB that I have shared at [Oshpark](https://oshpark.com/shared_projects/wLKzb0WG).
 
 ## Changes
 
@@ -48,12 +48,12 @@ GND   20 <-> J3-7
 
 Run the JLink GDB server via the following:
 ```
-JLinkGDBServer -if SWD -JLinkDevicesXMLPath ~/.config/SEGGER/JLinkDevices/Puya/PY32/JLinkDevices.xml -device PY32F030xx8
+JLinkGDBServer -if SWD -device STM32F103CB
 ```
 
 GDB can be connected via the following:
 ```
-gdb-multiarch --command=jlink-py32.gdb target/thumbv6m/debug/blink-py32
+gdb-multiarch --command=jlink-stm32.gdb target/thumbv7m/debug/main
 ```
 
 ## Credits
