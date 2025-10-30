@@ -18,7 +18,7 @@ and a perfboard pcb. The main goals used for this design:
     hand soldered the smaller parts, but it is very tedious.
 
 I was able to finish the design with the goals and the only part I needed to purchase was the adafruit power breakout. It
-is a 2-layer PCB that I have shared at [Oshpark](https://oshpark.com/shared_projects/wLKzb0WG).
+is a 2-layer PCB that I have shared at [Oshpark](https://oshpark.com/shared_projects/oVsTK2Hw).
 
 ## Changes
 
