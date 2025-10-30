@@ -3777,7 +3777,7 @@
 			(remove_unused_layers no)
 			(net 32 "unconnected-(SW2-A-Pad3)")
 			(pinfunction "A")
-			(pintype "passive")
+			(pintype "passive+no_connect")
 			(uuid "3871efa9-26fc-4f99-81c9-07b0c441c0aa")
 		)
 		(pad "MN" thru_hole circle
@@ -4198,7 +4198,7 @@
 			(roundrect_rratio 0.25)
 			(net 19 "unconnected-(U1-PC14-Pad3)")
 			(pinfunction "PC14")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "b2e72656-b86e-4503-b29e-384b3becb93e")
 		)
 		(pad "4" smd roundrect
@@ -4208,7 +4208,7 @@
 			(roundrect_rratio 0.25)
 			(net 18 "unconnected-(U1-PC15-Pad4)")
 			(pinfunction "PC15")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "6d8a437d-2238-4f7c-acde-5c47dc395228")
 		)
 		(pad "5" smd roundrect
@@ -4348,7 +4348,7 @@
 			(roundrect_rratio 0.25)
 			(net 26 "unconnected-(U1-PB0-Pad18)")
 			(pinfunction "PB0")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "c5710193-f7a7-4065-8c8e-bda9e87c0230")
 		)
 		(pad "19" smd roundrect
@@ -4358,7 +4358,7 @@
 			(roundrect_rratio 0.25)
 			(net 23 "unconnected-(U1-PB1-Pad19)")
 			(pinfunction "PB1")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "6109eb3c-85a1-4e4a-a721-f8b1a072f5b7")
 		)
 		(pad "20" smd roundrect
@@ -4378,7 +4378,7 @@
 			(roundrect_rratio 0.25)
 			(net 21 "unconnected-(U1-PB10-Pad21)")
 			(pinfunction "PB10")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "513728db-957c-4c99-9079-8335dba27448")
 		)
 		(pad "22" smd roundrect
@@ -4388,7 +4388,7 @@
 			(roundrect_rratio 0.25)
 			(net 25 "unconnected-(U1-PB11-Pad22)")
 			(pinfunction "PB11")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "ae2cdd2d-216f-4b50-95bd-ac7df39339e5")
 		)
 		(pad "23" smd roundrect
@@ -4438,7 +4438,7 @@
 			(roundrect_rratio 0.25)
 			(net 20 "unconnected-(U1-PB14-Pad27)")
 			(pinfunction "PB14")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "2cd91663-3c5d-43d3-874e-ba2d00c18fca")
 		)
 		(pad "28" smd roundrect
@@ -4448,7 +4448,7 @@
 			(roundrect_rratio 0.25)
 			(net 22 "unconnected-(U1-PB15-Pad28)")
 			(pinfunction "PB15")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "5fc21b25-f990-4a44-8210-cc66fe975db5")
 		)
 		(pad "29" smd roundrect
@@ -4458,7 +4458,7 @@
 			(roundrect_rratio 0.25)
 			(net 37 "unconnected-(U1-PA8-Pad29)")
 			(pinfunction "PA8")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "d3025031-2f93-4c97-8c99-d18ec6a91638")
 		)
 		(pad "30" smd roundrect
@@ -4488,7 +4488,7 @@
 			(roundrect_rratio 0.25)
 			(net 39 "unconnected-(U1-PA11-Pad32)")
 			(pinfunction "PA11")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "aee970cf-0f96-47e3-af7b-bd57753d24a1")
 		)
 		(pad "33" smd roundrect
@@ -4498,7 +4498,7 @@
 			(roundrect_rratio 0.25)
 			(net 40 "unconnected-(U1-PA12-Pad33)")
 			(pinfunction "PA12")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "d40bc559-0a77-4b53-96ca-22d53f989535")
 		)
 		(pad "34" smd roundrect
@@ -4548,7 +4548,7 @@
 			(roundrect_rratio 0.25)
 			(net 24 "unconnected-(U1-PA15-Pad38)")
 			(pinfunction "PA15")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "70f1a989-c1ca-4d5f-a569-1c75975365be")
 		)
 		(pad "39" smd roundrect
@@ -4558,7 +4558,7 @@
 			(roundrect_rratio 0.25)
 			(net 42 "unconnected-(U1-PB3-Pad39)")
 			(pinfunction "PB3")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "a45ab03a-0479-4400-9c19-a216d9d80b1f")
 		)
 		(pad "40" smd roundrect
@@ -4568,7 +4568,7 @@
 			(roundrect_rratio 0.25)
 			(net 41 "unconnected-(U1-PB4-Pad40)")
 			(pinfunction "PB4")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "3daf21bd-f6d1-4de9-8ed0-c072d8603353")
 		)
 		(pad "41" smd roundrect
@@ -4578,7 +4578,7 @@
 			(roundrect_rratio 0.25)
 			(net 43 "unconnected-(U1-PB5-Pad41)")
 			(pinfunction "PB5")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "d8f36d96-5778-4621-b217-56be0eeaf7eb")
 		)
 		(pad "42" smd roundrect
@@ -4588,7 +4588,7 @@
 			(roundrect_rratio 0.25)
 			(net 29 "unconnected-(U1-PB6-Pad42)")
 			(pinfunction "PB6")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "c4b5b0f7-1153-4bf3-a86a-65cb7188690a")
 		)
 		(pad "43" smd roundrect
@@ -4598,7 +4598,7 @@
 			(roundrect_rratio 0.25)
 			(net 38 "unconnected-(U1-PB7-Pad43)")
 			(pinfunction "PB7")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "b905f9ae-6108-4a64-9455-ff9754d53b5f")
 		)
 		(pad "44" smd roundrect
@@ -7816,14 +7816,6 @@
 		(layer "F.Cu")
 		(net 1)
 		(uuid "e564b7a6-6a34-4038-98ea-ecbca8ef5310")
-	)
-	(segment
-		(start 119.6125 144.2375)
-		(end 119.775 144.4)
-		(width 0.6)
-		(layer "F.Cu")
-		(net 1)
-		(uuid "e5b41008-b2b7-4f2d-9cd5-acbca2fc13f6")
 	)
 	(segment
 		(start 106.15 136.3)
