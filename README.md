@@ -3,7 +3,22 @@
 KiCad design for a atmospheric measurement board. The MCU is a stm32f103
 Series. There are 2 main sensors. One is the PMS 2007, which measures
 particulates, ie PM2.5. The other sensor is a BMS 680, which measures
-temperature, pressure, and organic compounds.
+temperature, pressure, and organic compounds. The measurements are output
+on an E-Ink tri-color display.
+
+This design is a continuation of a project that I did using a nucleo dev board
+and a perfboard pcb. The main goals used for this design:
+
+    - Use smd devices that I had already for the rest of the project, instead of a dev board
+    - Use an [Adafruit power supply breakout](https://www.adafruit.com/product/1944) that allows the use of a lithium battery. I didn't
+    want to implement this on the PCB for this project, and I don't have those types of devices on hand.
+    - Hand soldering for the pcb instead of my usual hot-plate reflow technique. This means
+    using 1206 size components instead of 0603, and SO footprint parts. This also helps with
+    the previous goal of using parts I had on hand, as my newer designs use TQFP footprints. I have successfully
+    hand soldered the smaller parts, but it is very tedious.
+
+I was able to finish the design with the goals and the only part I needed to purchase was the adafruit power breakout. It
+is a 2-layer PCB that I'll have manufactured at [Oshpark](https://oshpark.com).
 
 ## Changes
 
@@ -12,48 +27,12 @@ temperature, pressure, and organic compounds.
 
 ## Firmware
 
-Firmware for the board
+[Firmware](https://github.com/gpgreen/atmo-monitor-stm32)
 
-https://github.com/gpgreen/atmo-monitor-stm32
-
-## Boot configuration
-
-To boot from main flash [0x0800_0000]
-  Connect J2-4 to J2-5 (or) solder JP5-1 to center post
-
-To boot from System mem [0x1FFF_0000], or Embedded SRAM [0x2000_0000]
-  Connect J2-4 to J2-3 (or) solder JP6-3 to center post
-
-There is an embedded boot loader, programmed in production, in the system memory
-block. See the reference manual 3.6.2.
-
-## PIN JUMPER SIGNAL ASSIGNMENT
-```
-                    +-----+
-            +--------------------+
-            |J3     |     |    J2|
-        VDD-|1      +-----+     1|-GND
-        GND-|2                  2|-GND
-       +3.3-|3                  3|-+3.3
-[RESET] PF2-|4                  4|-PF4 [BOOT0_PRE]
-[SWCLK]PA14-|5                  5|-GND
-[SWDIO]PA13-|6                  6|-GND
-        GND-|7       RST        7|-GND
-        PF3-|8       +-+        8|-GND
-        PA0-|9       |O|        9|-GND
-        PA1-|10      +-+       10|-PB7
-        PA2-|11                11|-PB6
-        PA3-|12                12|-PB5
-        PA4-|13                13|-PB4
-        PA6-|14                14|-PB3
-        PA6-|15   UPB          15|-PA15
-        PA7-|16   +-+          16|-PA12 [USER LED - GREEN]
-        PB0-|17   |O|          17|-PA11 [USER PUSHBUTTON]
-        PB1-|18   +-+          18|-PA8
-            |                    |
-            +--------------------+
-```
 ## Connections to JTAG
+
+I have put test points on the board, so that push-pin test probes can be used to program
+the MCU.
 
 From a 20pin JTAG connector, run wires to the following pins to connect a debugger:
 
@@ -77,5 +56,13 @@ GDB can be connected via the following:
 gdb-multiarch --command=jlink-py32.gdb target/thumbv6m/debug/blink-py32
 ```
 
-## Links
-- [Firmware](https://github.com/gpgreen/atmo-monitor-stm32)
+## Credits
+
+as always, thanks for the good work
+- [Adafruit](https://www.adafruit.com)
+
+## License
+
+Licensed under
+
+- MIT license ([LICENSE-MIT](LICENSE-MIT) or http://opensource.org/licenses/MIT)
