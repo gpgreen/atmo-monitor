@@ -34,8 +34,8 @@ is a 2-layer PCB that I have shared at [Oshpark](https://oshpark.com/shared_proj
 I have put test points on the board, so that pogo pins can be used to program
 the MCU.
 
-[[https://www.segger.com/products/debug-probes/j-link/technology/interface-description/][jlink web page]]
-
+[jlink web page](https://www.segger.com/products/debug-probes/j-link/technology/interface-description/)
+```
 **** 20 Pin connector for JTAG
                 -------
     VTref      1|*   *|2 NC
@@ -49,13 +49,15 @@ the MCU.
     DBGRQ     17|*   *|18 GND*
     5V Supply 19|*   *|20 GND*
                 -------
+```
 From a 20pin JTAG connector, run wires to the following test pads to connect a debugger:
-
+```
 VTRef 1  <-> 3V3
 SWDIO 7  <-> SWD
 SWCLK 9  <-> SWC
 RESET 15 <-> RST
 GND   4  <-> GND
+```
 
 ## Running SEGGER JLink
 
